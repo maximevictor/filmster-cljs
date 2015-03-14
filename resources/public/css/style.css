@@ -1,0 +1,37 @@
+h1 {
+    text-decoration: underline;
+}
+
+.switch .switch__label {
+    width: 150px;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: 8px 0;
+    color: white;
+}
+
+.award-picker,
+.festival-picker {
+    padding: 30px;
+}
+
+body, nav {
+    background: #333;
+    color: white;
+}
+
+nav {
+    background: #333;
+    box-shadow: none;
+    border-bottom: 1px solid white;
+    width: 100vw;
+    left: calc(50vw - 50%);
+    position: relative;
+}
+
+.movie-result-card {
+    background: #666;
+}
+.card-title {
+    color: white;
+}

@@ -1,0 +1,2146 @@
+{
+    "CriticsTop250": [
+        {
+            "rank": 1,
+            "originalTitle": "Vertigo",
+            "director": "Alfred Hitchcock",
+            "year": "1958"
+        },
+        {
+            "rank": 2,
+            "originalTitle": "Citizen Kane",
+            "director": "Orson Welles",
+            "year": "1941"
+        },
+        {
+            "rank": 3,
+            "originalTitle": "Tokyo Story",
+            "director": "Ozu Yasujirô",
+            "year": "1953"
+        },
+        {
+            "rank": 4,
+            "englishTitle": "The Rules of the Game",
+            "originalTitle": "Règle du jeu, La",
+            "director": "Jean Renoir",
+            "year": "1939"
+        },
+        {
+            "rank": 5,
+            "originalTitle": "Sunrise",
+            "director": "F. W. Murnau",
+            "year": "1927"
+        },
+        {
+            "rank": 6,
+            "originalTitle": "2001: A Space Odyssey",
+            "director": "Stanley Kubrick",
+            "year": "1968"
+        },
+        {
+            "rank": 7,
+            "originalTitle": "Searchers, The",
+            "director": "John Ford",
+            "year": "1956"
+        },
+        {
+            "rank": 8,
+            "originalTitle": "Man with a Movie Camera",
+            "director": "Dziga Vertov",
+            "year": "1929"
+        },
+        {
+            "rank": 9,
+            "originalTitle": "Passion of Joan of Arc",
+            "director": "Carl Theodor Dreyer",
+            "year": "1927"
+        },
+        {
+            "rank": 10,
+            "englishTitle": "8½",
+            "originalTitle": "Otto e mezzo",
+            "director": "Federico Fellini",
+            "year": "1963"
+        },
+        {
+            "rank": 11,
+            "originalTitle": "Battleship Potemkin",
+            "director": "Sergei M Eisenstein",
+            "year": "1925"
+        },
+        {
+            "rank": 12,
+            "originalTitle": "Atalante, L'",
+            "director": "Jean Vigo",
+            "year": "1934"
+        },
+        {
+            "rank": 13,
+            "originalTitle": "Breathless",
+            "director": "Jean-Luc Godard",
+            "year": "1960"
+        },
+        {
+            "rank": 14,
+            "originalTitle": "Apocalypse Now",
+            "director": "Francis Ford Coppola",
+            "year": "1979"
+        },
+        {
+            "rank": 15,
+            "originalTitle": "Late Spring",
+            "director": "Ozu Yasujirô",
+            "year": "1949"
+        },
+        {
+            "rank": 16,
+            "originalTitle": "Au Hasard Balthazar",
+            "director": "Robert Bresson",
+            "year": "1966"
+        },
+        {
+            "rank": 17,
+            "originalTitle": "Seven Samurai",
+            "director": "Akira Kurosawa",
+            "year": "1954"
+        },
+        {
+            "rank": 17,
+            "originalTitle": "Persona",
+            "director": "Ingmar Bergman",
+            "year": "1966"
+        },
+        {
+            "rank": 19,
+            "originalTitle": "Mirror",
+            "director": "Andrei Tarkovsky",
+            "year": "1974"
+        },
+        {
+            "rank": 20,
+            "originalTitle": "Singin' in the Rain",
+            "director": "Stanley Donen/Gene Kelly",
+            "year": "1951"
+        },
+        {
+            "rank": 21,
+            "originalTitle": "Avventura, L'",
+            "director": "Michelangelo Antonioni",
+            "year": "1960"
+        },
+        {
+            "rank": 21,
+            "originalTitle": "Godfather: Part I, The",
+            "director": "Francis Ford Coppola",
+            "year": "1972"
+        },
+        {
+            "rank": 21,
+            "englishTitle": "Contempt",
+            "originalTitle": "Mépris, Le",
+            "director": "Jean-Luc Godard",
+            "year": "1963"
+        },
+        {
+            "rank": 24,
+            "originalTitle": "Rashomon",
+            "director": "Akira Kurosawa",
+            "year": "1950"
+        },
+        {
+            "rank": 24,
+            "originalTitle": "Ordet",
+            "director": "Carl Theodor Dreyer",
+            "year": "1955"
+        },
+        {
+            "rank": 24,
+            "originalTitle": "In The Mood For Love",
+            "director": "Wong Kar Wai",
+            "year": "2000"
+        },
+        {
+            "rank": 27,
+            "originalTitle": "Andrei Rublev",
+            "director": "Andrei Tarkovsky",
+            "year": "1966"
+        },
+        {
+            "rank": 28,
+            "originalTitle": "Mulholland Dr",
+            "director": "David Lynch",
+            "year": "2003"
+        },
+        {
+            "rank": 29,
+            "originalTitle": "Stalker",
+            "director": "Andrei Tarkovsky",
+            "year": "1979"
+        },
+        {
+            "rank": 29,
+            "originalTitle": "Shoah",
+            "director": "Claude Lanzmann",
+            "year": "1985"
+        },
+        {
+            "rank": 31,
+            "originalTitle": "Taxi Driver",
+            "director": "Martin Scorsese",
+            "year": "1976"
+        },
+        {
+            "rank": 31,
+            "originalTitle": "Godfather: Part II, The",
+            "director": "Francis Ford Coppola",
+            "year": "1974"
+        },
+        {
+            "rank": 33,
+            "englishTitle": "Bicycle Thieves, The",
+            "originalTitle": "Ladri di biciclette",
+            "director": "Vittorio de Sica",
+            "year": "1948"
+        },
+        {
+            "rank": 34,
+            "originalTitle": "Psycho",
+            "director": "Alfred Hitchcock",
+            "year": "1960"
+        },
+        {
+            "rank": 34,
+            "originalTitle": "General, The",
+            "director": "Buster Keaton",
+            "year": "1926"
+        },
+        {
+            "rank": 36,
+            "originalTitle": "Sátántangó",
+            "director": "Béla Tarr",
+            "year": "1994"
+        },
+        {
+            "rank": 36,
+            "originalTitle": "Metropolis",
+            "director": "Fritz Lang",
+            "year": "1927"
+        },
+        {
+            "rank": 36,
+            "originalTitle": "Jeanne Dielman, 23 quai du Commerce, 1080 Bruxelles",
+            "director": "Chantal Akerman",
+            "year": "1975"
+        },
+        {
+            "rank": 39,
+            "originalTitle": "Dolce Vita, La",
+            "director": "Federico Fellini",
+            "year": "1960"
+        },
+        {
+            "rank": 39,
+            "englishTitle": "400 Blows, The",
+            "originalTitle": "Les Quatre Cents Coups",
+            "director": "François Truffaut",
+            "year": "1959"
+        },
+        {
+            "rank": 41,
+            "originalTitle": "Pather Panchali",
+            "director": "Satyajit Ray",
+            "year": "1955"
+        },
+        {
+            "rank": 41,
+            "englishTitle": "Journey to Italy",
+            "originalTitle": "Viaggio in Italia",
+            "director": "Roberto Rossellini",
+            "year": "1954"
+        },
+        {
+            "rank": 43,
+            "originalTitle": "Pierrot le Fou",
+            "director": "Jean-Luc Godard",
+            "year": "1965"
+        },
+        {
+            "rank": 43,
+            "originalTitle": "Close-Up",
+            "director": "Abbas Kiarostami",
+            "year": "1989"
+        },
+        {
+            "rank": 43,
+            "originalTitle": "Some Like It Hot",
+            "director": "Billy Wilder",
+            "year": "1959"
+        },
+        {
+            "rank": 43,
+            "originalTitle": "Playtime",
+            "director": "Jacques Tati",
+            "year": "1967"
+        },
+        {
+            "rank": 43,
+            "originalTitle": "Gertrud",
+            "director": "Carl Theodor Dreyer",
+            "year": "1964"
+        },
+        {
+            "rank": 48,
+            "originalTitle": "Histoire(s) du cinéma",
+            "director": "Jean-Luc Godard",
+            "year": "1998"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Battle of Algiers, The",
+            "originalTitle": "La Battaglia di Algeri,",
+            "director": "Gillo Pontecorvo",
+            "year": "1966"
+        },
+        {
+            "rank": 50,
+            "originalTitle": "City Lights",
+            "director": "Charles Chaplin",
+            "year": "1931"
+        },
+        {
+            "rank": 50,
+            "originalTitle": "Ugetsu Monogatari",
+            "director": "Mizoguchi Kenji",
+            "year": "1953"
+        },
+        {
+            "rank": 50,
+            "originalTitle": "Jetée, La",
+            "director": "Chris Marker",
+            "year": "1962"
+        },
+        {
+            "rank": 53,
+            "originalTitle": "North by Northwest",
+            "director": "Alfred Hitchcock",
+            "year": "1959"
+        },
+        {
+            "rank": 53,
+            "originalTitle": "Rear Window",
+            "director": "Alfred Hitchcock",
+            "year": "1954"
+        },
+        {
+            "rank": 53,
+            "originalTitle": "Raging Bull",
+            "director": "Martin Scorsese",
+            "year": "1980"
+        },
+        {
+            "rank": 56,
+            "originalTitle": "M",
+            "director": "Fritz Lang",
+            "year": "1931"
+        },
+        {
+            "rank": 57,
+            "originalTitle": "Leopard, The",
+            "director": "Luchino Visconti",
+            "year": "1963"
+        },
+        {
+            "rank": 57,
+            "originalTitle": "Touch of Evil",
+            "director": "Orson Welles",
+            "year": "1958"
+        },
+        {
+            "rank": 59,
+            "originalTitle": "Sherlock Jr",
+            "director": "Buster Keaton",
+            "year": "1924"
+        },
+        {
+            "rank": 59,
+            "originalTitle": "Barry Lyndon",
+            "director": "Stanley Kubrick",
+            "year": "1975"
+        },
+        {
+            "rank": 59,
+            "originalTitle": "Maman et la putain, La",
+            "director": "Jean Eustache",
+            "year": "1973"
+        },
+        {
+            "rank": 59,
+            "originalTitle": "Sansho Dayu",
+            "director": "Mizoguchi Kenji",
+            "year": "1954"
+        },
+        {
+            "rank": 63,
+            "originalTitle": "Wild Strawberries",
+            "director": "Ingmar Bergman",
+            "year": "1957"
+        },
+        {
+            "rank": 63,
+            "originalTitle": "Modern Times",
+            "director": "Charles Chaplin",
+            "year": "1936"
+        },
+        {
+            "rank": 63,
+            "originalTitle": "Sunset Blvd.",
+            "director": "Billy Wilder",
+            "year": "1950"
+        },
+        {
+            "rank": 63,
+            "originalTitle": "Night of the Hunter, The",
+            "director": "Charles Laughton",
+            "year": "1955"
+        },
+        {
+            "rank": 63,
+            "originalTitle": "Pickpocket",
+            "director": "Robert Bresson",
+            "year": "1959"
+        },
+        {
+            "rank": 63,
+            "originalTitle": "Rio Bravo",
+            "director": "Howard Hawks",
+            "year": "1958"
+        },
+        {
+            "rank": 69,
+            "originalTitle": "Blade Runner",
+            "director": "Ridley Scott",
+            "year": "1982"
+        },
+        {
+            "rank": 69,
+            "originalTitle": "Blue Velvet",
+            "director": "David Lynch",
+            "year": "1986"
+        },
+        {
+            "rank": 69,
+            "originalTitle": "Sans Soleil",
+            "director": "Chris Marker",
+            "year": "1982"
+        },
+        {
+            "rank": 69,
+            "originalTitle": "Man Escaped, A",
+            "director": "Robert Bresson",
+            "year": "1956"
+        },
+        {
+            "rank": 73,
+            "originalTitle": "Third Man, The",
+            "director": "Carol Reed",
+            "year": "1949"
+        },
+        {
+            "rank": 73,
+            "originalTitle": "eclisse, L'",
+            "director": "Michelangelo Antonioni",
+            "year": "1962"
+        },
+        {
+            "rank": 73,
+            "originalTitle": "enfants du paradis, Les",
+            "director": "Marcel Carné",
+            "year": "1945"
+        },
+        {
+            "rank": 73,
+            "originalTitle": "grande illusion, La",
+            "director": "Jean Renoir",
+            "year": "1937"
+        },
+        {
+            "rank": 73,
+            "originalTitle": "Nashville",
+            "director": "Robert Altman",
+            "year": "1975"
+        },
+        {
+            "rank": 78,
+            "originalTitle": "Chinatown",
+            "director": "Roman Polanski",
+            "year": "1974"
+        },
+        {
+            "rank": 78,
+            "originalTitle": "Beau Travail",
+            "director": "Claire Denis",
+            "year": "1998"
+        },
+        {
+            "rank": 78,
+            "originalTitle": "Once Upon a Time in the West",
+            "director": "Sergio Leone",
+            "year": "1968"
+        },
+        {
+            "rank": 81,
+            "originalTitle": "Magnificent Ambersons, The",
+            "director": "Orson Welles",
+            "year": "1942"
+        },
+        {
+            "rank": 81,
+            "originalTitle": "Lawrence of Arabia",
+            "director": "David Lean",
+            "year": "1962"
+        },
+        {
+            "rank": 81,
+            "originalTitle": "Spirit of the Beehive, The",
+            "director": "Víctor Erice",
+            "year": "1973"
+        },
+        {
+            "rank": 84,
+            "originalTitle": "Fanny and Alexander",
+            "director": "Ingmar Bergman",
+            "year": "1984"
+        },
+        {
+            "rank": 84,
+            "originalTitle": "Casablanca",
+            "director": "Michael Curtiz",
+            "year": "1942"
+        },
+        {
+            "rank": 84,
+            "originalTitle": "Colour of Pomegranates, The",
+            "director": "Sergei Parajanov",
+            "year": "1968"
+        },
+        {
+            "rank": 84,
+            "originalTitle": "Greed",
+            "director": "Erich von Stroheim",
+            "year": "1925"
+        },
+        {
+            "rank": 84,
+            "originalTitle": "Brighter Summer Day, A",
+            "director": "Edward Yang",
+            "year": "1991"
+        },
+        {
+            "rank": 84,
+            "originalTitle": "Wild Bunch, The",
+            "director": "Sam Peckinpah",
+            "year": "1969"
+        },
+        {
+            "rank": 90,
+            "originalTitle": "Partie de campagne",
+            "director": "Jean Renoir",
+            "year": "1936"
+        },
+        {
+            "rank": 90,
+            "originalTitle": "Aguirre, Wrath of God",
+            "director": "Werner Herzog",
+            "year": "1972"
+        },
+        {
+            "rank": 90,
+            "originalTitle": "Matter of Life and Death, A",
+            "director": "Michael Powell, Emeric Pressburger",
+            "year": "1946"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "Seventh Seal, The",
+            "director": "Ingmar Bergman",
+            "year": "1957"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "chien andalou, Un",
+            "director": "Luis Buñuel",
+            "year": "1928"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "Intolerance",
+            "director": "D.W. Griffith",
+            "year": "1916"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "One and a Two, A",
+            "director": "Edward Yang",
+            "year": "1999"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "Life and Death of Colonel Blimp, The",
+            "director": "Michael Powell, Emeric Pressburger",
+            "year": "1943"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "Touki Bouki",
+            "director": "Djibril Diop Mambéty",
+            "year": "1973"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "Fear Eats the Soul",
+            "director": "Rainer Werner Fassbinder",
+            "year": "1974"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "Imitation of Life",
+            "director": "Douglas Sirk",
+            "year": "1959"
+        },
+        {
+            "rank": 93,
+            "originalTitle": "Madame de…",
+            "director": "Max Ophüls",
+            "year": "1953"
+        },
+        {
+            "rank": 102,
+            "originalTitle": "Wavelength",
+            "director": "Michael Snow",
+            "year": "1967"
+        },
+        {
+            "rank": 102,
+            "originalTitle": "Conformist, The",
+            "director": "Bernardo Bertolucci",
+            "year": "1970"
+        },
+        {
+            "rank": 102,
+            "originalTitle": "Travelling Players, The",
+            "director": "Theodoros Angelopoulos",
+            "year": "1975"
+        },
+        {
+            "rank": 102,
+            "originalTitle": "Meshes of the Afternoon",
+            "director": "Maya Deren, Alexander Hammid",
+            "year": "1943"
+        },
+        {
+            "rank": 102,
+            "originalTitle": "Two or Three Things I Know About Her…",
+            "director": "Jean-Luc Godard",
+            "year": "1967"
+        },
+        {
+            "rank": 102,
+            "originalTitle": "Tree of Life, The",
+            "director": "Terrence Malick",
+            "year": "2010"
+        },
+        {
+            "rank": 102,
+            "originalTitle": "Ivan the Terrible",
+            "director": "Sergei M Eisenstein",
+            "year": "1945"
+        },
+        {
+            "rank": 102,
+            "originalTitle": "Last Year At Marienbad",
+            "director": "Alain Resnais",
+            "year": "1961"
+        },
+        {
+            "rank": 110,
+            "originalTitle": "Lady Eve, The",
+            "director": "Preston Sturges",
+            "year": "1941"
+        },
+        {
+            "rank": 110,
+            "originalTitle": "olvidados, Los",
+            "director": "Luis Buñuel",
+            "year": "1950"
+        },
+        {
+            "rank": 110,
+            "originalTitle": "Bringing Up Baby",
+            "director": "Howard Hawks",
+            "year": "1938"
+        },
+        {
+            "rank": 110,
+            "originalTitle": "Performance",
+            "director": "Donald Cammell, Nicolas Roeg",
+            "year": "1970"
+        },
+        {
+            "rank": 110,
+            "originalTitle": "Passenger, The",
+            "director": "Michelangelo Antonioni",
+            "year": "1974"
+        },
+        {
+            "rank": 110,
+            "originalTitle": "Viridiana",
+            "director": "Luis Buñuel",
+            "year": "1961"
+        },
+        {
+            "rank": 110,
+            "originalTitle": "Age d'Or, L'",
+            "director": "Luis Buñuel",
+            "year": "1930"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Canterbury Tale, A",
+            "director": "Michael Powell, Emeric Pressburger",
+            "year": "1944"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Mouchette",
+            "director": "Robert Bresson",
+            "year": "1966"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Dr. Strangelove",
+            "director": "Stanley Kubrick",
+            "year": "1963"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Nosferatu",
+            "director": "F. W. Murnau",
+            "year": "1922"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Red Shoes, The",
+            "director": "Michael Powell, Emeric Pressburger",
+            "year": "1948"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Trouble in Paradise",
+            "director": "Ernst Lubitsch",
+            "year": "1932"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "City of Sadness, A",
+            "director": "Hsiao-hsien Hou",
+            "year": "1989"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Amarcord",
+            "director": "Federico Fellini",
+            "year": "1972"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Man Who Shot Liberty Valance, The",
+            "director": "John Ford",
+            "year": "1962"
+        },
+        {
+            "rank": 117,
+            "originalTitle": "Days of Heaven",
+            "director": "Terrence Malick",
+            "year": "1978"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Spring in a Small Town",
+            "director": "Fei Mu",
+            "year": "1948"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Do The Right Thing",
+            "director": "Spike Lee",
+            "year": "1989"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Out 1",
+            "director": "Jacques Rivette",
+            "year": "1990"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Tropical Malady",
+            "director": "Apichatpong Weerasethakul",
+            "year": "2004"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "River, The",
+            "director": "Jean Renoir",
+            "year": "1951"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Jules et Jim",
+            "director": "François Truffaut",
+            "year": "1962"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Pulp Fiction",
+            "director": "Quentin Tarantino",
+            "year": "1994"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Meet Me In St. Louis",
+            "director": "Vincente Minnelli",
+            "year": "1944"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "argent, L'",
+            "director": "Robert Bresson",
+            "year": "1983"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Ikiru",
+            "director": "Akira Kurosawa",
+            "year": "1952"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Three Colours: Blue",
+            "director": "Krzysztof Kieslowski",
+            "year": "1993"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Don't Look Now",
+            "director": "Nicolas Roeg",
+            "year": "1973"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Celine and Julie Go Boating",
+            "director": "Jacques Rivette",
+            "year": "1974"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Annie Hall",
+            "director": "Woody Allen",
+            "year": "1977"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Apartment, The",
+            "director": "Billy Wilder",
+            "year": "1960"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Last Laugh, The",
+            "director": "F. W. Murnau",
+            "year": "1924"
+        },
+        {
+            "rank": 127,
+            "originalTitle": "Hiroshima Mon Amour",
+            "director": "Alain Resnais",
+            "year": "1959"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Blow Up",
+            "director": "Michelangelo Antonioni",
+            "year": "1966"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Great Dictator, The",
+            "director": "Charles Chaplin",
+            "year": "1940"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Memories of Underdevelopment",
+            "director": "Tomás Gutiérrez Alea",
+            "year": "1968"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Diary of a Country Priest",
+            "director": "Robert Bresson",
+            "year": "1951"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Chungking Express",
+            "director": "Wong Kar Wai",
+            "year": "1994"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "To Be or Not To Be",
+            "director": "Ernst Lubitsch",
+            "year": "1942"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Woman Under the Influence, A",
+            "director": "John Cassavetes",
+            "year": "1974"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Napoleon",
+            "director": "Abel Gance",
+            "year": "1927"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Vivre Sa Vie",
+            "director": "Jean-Luc Godard",
+            "year": "1962"
+        },
+        {
+            "rank": 144,
+            "originalTitle": "Wizard of Oz, The",
+            "director": "Victor Fleming",
+            "year": "1939"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Marketa Lazarová",
+            "director": "Frantisek Vlácil",
+            "year": "1967"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Hidden",
+            "director": "Michael Haneke",
+            "year": "2004"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Shining, The",
+            "director": "Stanley Kubrick",
+            "year": "1980"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Solaris",
+            "director": "Andrei Tarkovsky",
+            "year": "1972"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Chimes at Midnight",
+            "director": "Orson Welles",
+            "year": "1966"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Gold Rush, The",
+            "director": "Charles Chaplin",
+            "year": "1925"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Letter From an Unknown Woman",
+            "director": "Max Ophüls",
+            "year": "1948"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Brief Encounter",
+            "director": "David Lean",
+            "year": "1945"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "In a Lonely Place",
+            "director": "Nicholas Ray",
+            "year": "1950"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Chimes at Midnight",
+            "director": "Orson Welles",
+            "year": "1966"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Gold Rush, The",
+            "director": "Charles Chaplin",
+            "year": "1925"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Letter From an Unknown Woman",
+            "director": "Max Ophüls",
+            "year": "1948"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Brief Encounter",
+            "director": "David Lean",
+            "year": "1945"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "In a Lonely Place",
+            "director": "Nicholas Ray",
+            "year": "1950"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Black Narcissus",
+            "director": "Michael Powell, Emeric Pressburger",
+            "year": "1947"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "My Neighbour Totoro",
+            "director": "Miyazaki Hayao",
+            "year": "1988"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Only Angels Have Wings",
+            "director": "Howard Hawks",
+            "year": "1939"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Vampyr",
+            "director": "Carl Theodor Dreyer",
+            "year": "1932"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Come And See",
+            "director": "Elem Klimov",
+            "year": "1985"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Distant Voices, Still Lives",
+            "director": "Terence Davies",
+            "year": "1988"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Once Upon a Time in America",
+            "director": "Sergio Leone",
+            "year": "1983"
+        },
+        {
+            "rank": 154,
+            "originalTitle": "Cries and Whispers",
+            "director": "Ingmar Bergman",
+            "year": "1957"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "King Kong",
+            "director": "Merian C. Cooper, Ernest B. Schoedsack",
+            "year": "1933"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Werckmeister Harmonies, The",
+            "director": "Béla Tarr",
+            "year": "2000"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Star Wars",
+            "director": "George Lucas",
+            "year": "1977"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Notorious",
+            "director": "Alfred Hitchcock",
+            "year": "1946"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "His Girl Friday",
+            "director": "Howard Hawks",
+            "year": "1939"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Goodfellas",
+            "director": "Martin Scorsese",
+            "year": "1990"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Umbrellas of Cherbourg, The",
+            "director": "Jacques Demy",
+            "year": "1964"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Trip to the Moon, A",
+            "director": "Georges Méliès",
+            "year": "1902"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Sweet Smell of Success",
+            "director": "Alexander Mackendrick",
+            "year": "1957"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Kind Hearts and Coronets",
+            "director": "Robert Hamer",
+            "year": "1949"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Tabu",
+            "director": "F. W. Murnau",
+            "year": "1931"
+        },
+        {
+            "rank": 171,
+            "originalTitle": "Earth",
+            "director": "Aleksandr Dovzhenko",
+            "year": "1930"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Breaking the Waves",
+            "director": "Lars von Trier",
+            "year": "1996"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Grapes of Wrath, The",
+            "director": "John Ford",
+            "year": "1940"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Paris, Texas",
+            "director": "Wim Wenders",
+            "year": "1984"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "E.T.",
+            "director": "Steven Spielberg",
+            "year": "1982"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Rome Open City",
+            "director": "Roberto Rossellini",
+            "year": "1945"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Faces",
+            "director": "John Cassavetes",
+            "year": "1968"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Music Room, The",
+            "director": "Satyajit Ray",
+            "year": "1958"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Story of the Late Chrysanthemums, The",
+            "director": "Mizoguchi Kenji",
+            "year": "1939"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Touch of Zen, A",
+            "director": "King Hu",
+            "year": "1969"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Listen to Britain",
+            "director": "Humphrey Jennings, Stewart McAllister",
+            "year": "1942"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Day of Wrath",
+            "director": "Carl Theodor Dreyer",
+            "year": "1943"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Thin Red Line, The",
+            "director": "Terrence Malick",
+            "year": "1998"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Eraserhead",
+            "director": "David Lynch",
+            "year": "1976"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Texas Chainsaw Massacre, The",
+            "director": "Tobe Hooper",
+            "year": "1974"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Discreet Charm of the Bourgeoisie, The",
+            "director": "Luis Buñuel",
+            "year": "1972"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Conversation, The",
+            "director": "Francis Ford Coppola",
+            "year": "1974"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "Out of the Past",
+            "director": "Jacques Tourneur",
+            "year": "1947"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "I Was Born, But…",
+            "director": "Ozu Yasujirô",
+            "year": "1932"
+        },
+        {
+            "rank": 183,
+            "originalTitle": "I Know Where I'm Going!",
+            "director": "Michael Powell, Emeric Pressburger",
+            "year": "1945"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Death of Mr Lazarescu, The",
+            "director": "Cristi Puiu",
+            "year": "2005"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Red Desert",
+            "director": "Michelangelo Antonioni",
+            "year": "1964"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Chelsea Girls",
+            "director": "Andy Warhol, Paul Morrissey",
+            "year": "1966"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Badlands",
+            "director": "Terrence Malick",
+            "year": "1973"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Kings of the Road",
+            "director": "Wim Wenders",
+            "year": "1976"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "There Will Be Blood",
+            "director": "Paul Thomas Anderson",
+            "year": "2007"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "WALL-E",
+            "director": "Andrew Stanton",
+            "year": "2008"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Berlin Alexanderplatz",
+            "director": "Rainer Werner Fassbinder",
+            "year": "1980"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Videodrome",
+            "director": "David Cronenberg",
+            "year": "1983"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Daisies",
+            "director": "Vera Chytilová",
+            "year": "1966"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Uncle Boonmee Who Can Recall His Past Lives",
+            "director": "Apichatpong Weerasethakul",
+            "year": "2010"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Manhattan",
+            "director": "Woody Allen",
+            "year": "1979"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Cleo from 5 to 7",
+            "director": "Agnès Varda",
+            "year": "1962"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "West of the Tracks",
+            "director": "Wang Bing",
+            "year": "2002"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Russian Ark",
+            "director": "Aleksandr Sokurov",
+            "year": "2002"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Tale of Tales, A",
+            "director": "Yuri Norstein",
+            "year": "1979"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Spirited Away",
+            "director": "Miyazaki Hayao",
+            "year": "2001"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "strada, La",
+            "director": "Federico Fellini",
+            "year": "1954"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Paisà",
+            "director": "Roberto Rossellini",
+            "year": "1946"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Shop Around the Corner, The",
+            "director": "Ernst Lubitsch",
+            "year": "1940"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Big Sleep, The",
+            "director": "Howard Hawks",
+            "year": "1946"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Killer of Sheep",
+            "director": "Charles Burnett",
+            "year": "1977"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Wanda",
+            "director": "Barbara Loden",
+            "year": "1970"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Germany Year Zero",
+            "director": "Roberto Rossellini",
+            "year": "1948"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Life of Oharu, The",
+            "director": "Mizoguchi Kenji",
+            "year": "1952"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Army of Shadows",
+            "director": "Jean-Pierre Melville",
+            "year": "1969"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Salo, or The 120 Days of Sodom",
+            "director": "Pier Paolo Pasolini",
+            "year": "1975"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Duck Soup",
+            "director": "Leo McCarey",
+            "year": "1933"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Devil Probably, The",
+            "director": "Robert Bresson",
+            "year": "1977"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Turin Horse, The",
+            "director": "Béla Tarr",
+            "year": "2011"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Love Streams",
+            "director": "John Cassavetes",
+            "year": "1984"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Exterminating Angel, The",
+            "director": "Luis Buñuel",
+            "year": "1962"
+        },
+        {
+            "rank": 202,
+            "originalTitle": "Floating Clouds",
+            "director": "Naruse Mikio",
+            "year": "1955"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Piano, The",
+            "director": "Jane Campion",
+            "year": "1992"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Gone with the Wind",
+            "director": "Victor Fleming",
+            "year": "1939"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Melancholia",
+            "director": "Lars von Trier",
+            "year": "2011"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "House is Black, The",
+            "director": "Forough Farrokhzad",
+            "year": "1962"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Cabinet of Dr Caligari, The",
+            "director": "Robert Wiene",
+            "year": "1919"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Red River",
+            "director": "Howard Hawks, Arthur Rosson",
+            "year": "1947"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Clockwork Orange, A",
+            "director": "Stanley Kubrick",
+            "year": "1971"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Two-Lane Blacktop",
+            "director": "Monte Hellman",
+            "year": "1971"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Autumn Afternoon, An",
+            "director": "Ozu Yasujirô",
+            "year": "1962"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Thin Blue Line, The",
+            "director": "Errol Morris",
+            "year": "1989"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "World of Apu, The",
+            "director": "Satyajit Ray",
+            "year": "1958"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Testament of Dr Mabuse, The",
+            "director": "Fritz Lang",
+            "year": "1933"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "My Darling Clementine",
+            "director": "John Ford",
+            "year": "1946"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Double Life of Veronique, The",
+            "director": "Krzysztof Kieslowski",
+            "year": "1991"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Kes",
+            "director": "Ken Loach",
+            "year": "1969"
+        },
+        {
+            "rank": 235,
+            "originalTitle": "Three Colours: Red",
+            "director": "Krzysztof Kieslowski",
+            "year": "1994"
+        }
+    ],
+    "DirectorsTop100": [
+        {
+            "rank": 1,
+            "englishTitle": "Tokyo Story",
+            "director": "Ozu Yasujirô",
+            "year": "1953"
+        },
+        {
+            "rank": 2,
+            "englishTitle": "2001: A Space Odyssey",
+            "director": "Stanley Kubrick",
+            "year": "1968"
+        },
+        {
+            "rank": 2,
+            "englishTitle": "Citizen Kane",
+            "director": "Orson Welles",
+            "year": "1941"
+        },
+        {
+            "rank": 4,
+            "englishTitle": "8½",
+            "director": "Federico Fellini",
+            "year": "1963"
+        },
+        {
+            "rank": 5,
+            "englishTitle": "Taxi Driver",
+            "director": "Martin Scorsese",
+            "year": "1976"
+        },
+        {
+            "rank": 6,
+            "englishTitle": "Apocalypse Now",
+            "director": "Francis Ford Coppola",
+            "year": "1979"
+        },
+        {
+            "rank": 7,
+            "englishTitle": "Vertigo",
+            "director": "Alfred Hitchcock",
+            "year": "1958"
+        },
+        {
+            "rank": 7,
+            "englishTitle": "Godfather: Part I, The",
+            "director": "Francis Ford Coppola",
+            "year": "1972"
+        },
+        {
+            "rank": 9,
+            "englishTitle": "Mirror",
+            "director": "Andrei Tarkovsky",
+            "year": "1974"
+        },
+        {
+            "rank": 10,
+            "englishTitle": "Bicycle Thieves, The",
+            "director": "Vittorio de Sica",
+            "year": "1948"
+        },
+        {
+            "rank": 11,
+            "englishTitle": "Breathless",
+            "director": "Jean-Luc Godard",
+            "year": "1960"
+        },
+        {
+            "rank": 12,
+            "englishTitle": "Raging Bull",
+            "director": "Martin Scorsese",
+            "year": "1980"
+        },
+        {
+            "rank": 13,
+            "englishTitle": "Persona",
+            "director": "Ingmar Bergman",
+            "year": "1966"
+        },
+        {
+            "rank": 13,
+            "englishTitle": "400 Blows, The",
+            "originalTitle": "Les Quatre Cents Coups",
+            "director": "François Truffaut",
+            "year": "1959"
+        },
+        {
+            "rank": 13,
+            "englishTitle": "Andrei Rublev",
+            "director": "Andrei Tarkovsky",
+            "year": "1966"
+        },
+        {
+            "rank": 16,
+            "englishTitle": "Fanny and Alexander",
+            "director": "Ingmar Bergman",
+            "year": "1984"
+        },
+        {
+            "rank": 17,
+            "englishTitle": "Seven Samurai",
+            "director": "Akira Kurosawa",
+            "year": "1954"
+        },
+        {
+            "rank": 18,
+            "englishTitle": "Rashomon",
+            "director": "Akira Kurosawa",
+            "year": "1950"
+        },
+        {
+            "rank": 19,
+            "englishTitle": "Barry Lyndon",
+            "director": "Stanley Kubrick",
+            "year": "1975"
+        },
+        {
+            "rank": 19,
+            "englishTitle": "Ordet",
+            "director": "Carl Theodor Dreyer",
+            "year": "1955"
+        },
+        {
+            "rank": 21,
+            "englishTitle": "Au Hasard Balthazar",
+            "director": "Robert Bresson",
+            "year": "1966"
+        },
+        {
+            "rank": 22,
+            "englishTitle": "Modern Times",
+            "director": "Charles Chaplin",
+            "year": "1936"
+        },
+        {
+            "rank": 22,
+            "englishTitle": "Atalante, L'",
+            "director": "Jean Vigo",
+            "year": "1934"
+        },
+        {
+            "rank": 22,
+            "englishTitle": "Sunrise",
+            "director": "F. W. Murnau",
+            "year": "1927"
+        },
+        {
+            "rank": 22,
+            "englishTitle": "The Rules of the Game",
+            "originalTitle": "Règle du jeu, La",
+            "director": "Jean Renoir",
+            "year": "1939"
+        },
+        {
+            "rank": 26,
+            "englishTitle": "Touch of Evil",
+            "director": "Orson Welles",
+            "year": "1958"
+        },
+        {
+            "rank": 26,
+            "englishTitle": "Night of the Hunter, The",
+            "director": "Charles Laughton",
+            "year": "1955"
+        },
+        {
+            "rank": 26,
+            "englishTitle": "Battle of Algiers, The",
+            "director": "Gillo Pontecorvo",
+            "year": "1966"
+        },
+        {
+            "rank": 26,
+            "englishTitle": "strada, La",
+            "director": "Federico Fellini",
+            "year": "1954"
+        },
+        {
+            "rank": 30,
+            "englishTitle": "Stalker",
+            "director": "Andrei Tarkovsky",
+            "year": "1979"
+        },
+        {
+            "rank": 30,
+            "englishTitle": "City Lights",
+            "director": "Charles Chaplin",
+            "year": "1931"
+        },
+        {
+            "rank": 30,
+            "englishTitle": "Avventura, L'",
+            "director": "Michelangelo Antonioni",
+            "year": "1960"
+        },
+        {
+            "rank": 30,
+            "englishTitle": "Amarcord",
+            "director": "Federico Fellini",
+            "year": "1972"
+        },
+        {
+            "rank": 30,
+            "englishTitle": "Gospel According to St Matthew, The",
+            "director": "Pier Paolo Pasolini",
+            "year": "1964"
+        },
+        {
+            "rank": 30,
+            "englishTitle": "Godfather: Part II, The",
+            "director": "Francis Ford Coppola",
+            "year": "1974"
+        },
+        {
+            "rank": 30,
+            "englishTitle": "Come And See",
+            "director": "Elem Klimov",
+            "year": "1985"
+        },
+        {
+            "rank": 37,
+            "englishTitle": "Close-Up",
+            "director": "Abbas Kiarostami",
+            "year": "1989"
+        },
+        {
+            "rank": 37,
+            "englishTitle": "Some Like It Hot",
+            "director": "Billy Wilder",
+            "year": "1959"
+        },
+        {
+            "rank": 37,
+            "englishTitle": "dolce vita, La",
+            "director": "Federico Fellini",
+            "year": "1960"
+        },
+        {
+            "rank": 37,
+            "englishTitle": "Passion of Joan of Arc",
+            "director": "Carl Theodor Dreyer",
+            "year": "1927"
+        },
+        {
+            "rank": 37,
+            "englishTitle": "Playtime",
+            "director": "Jacques Tati",
+            "year": "1967"
+        },
+        {
+            "rank": 37,
+            "englishTitle": "Man Escaped, A",
+            "director": "Robert Bresson",
+            "year": "1956"
+        },
+        {
+            "rank": 37,
+            "englishTitle": "Viridiana",
+            "director": "Luis Buñuel",
+            "year": "1961"
+        },
+        {
+            "rank": 44,
+            "englishTitle": "Once Upon a Time in the West",
+            "director": "Sergio Leone",
+            "year": "1968"
+        },
+        {
+            "rank": 44,
+            "englishTitle": "Contempt",
+            "originalTitle": "mépris, Le",
+            "director": "Jean-Luc Godard",
+            "year": "1963"
+        },
+        {
+            "rank": 44,
+            "englishTitle": "Apartment, The",
+            "director": "Billy Wilder",
+            "year": "1960"
+        },
+        {
+            "rank": 44,
+            "englishTitle": "Hour of the Wolf",
+            "director": "Ingmar Bergman",
+            "year": "1968"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "One Flew Over the Cuckoo's Nest",
+            "director": "Milos Forman",
+            "year": "1975"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Searchers, The",
+            "director": "John Ford",
+            "year": "1956"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Psycho",
+            "director": "Alfred Hitchcock",
+            "year": "1960"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Man with a Movie Camera",
+            "director": "Dziga Vertov",
+            "year": "1929"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Shoah",
+            "director": "Claude Lanzmann",
+            "year": "1985"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Lawrence of Arabia",
+            "director": "David Lean",
+            "year": "1962"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "eclisse, L'",
+            "director": "Michelangelo Antonioni",
+            "year": "1962"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Pickpocket",
+            "director": "Robert Bresson",
+            "year": "1959"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Pather Panchali",
+            "director": "Satyajit Ray",
+            "year": "1955"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Rear Window",
+            "director": "Alfred Hitchcock",
+            "year": "1954"
+        },
+        {
+            "rank": 48,
+            "englishTitle": "Goodfellas",
+            "director": "Martin Scorsese",
+            "year": "1990"
+        },
+        {
+            "rank": 59,
+            "englishTitle": "Blow Up",
+            "director": "Michelangelo Antonioni",
+            "year": "1966"
+        },
+        {
+            "rank": 59,
+            "englishTitle": "Conformist, The",
+            "director": "Bernardo Bertolucci",
+            "year": "1970"
+        },
+        {
+            "rank": 59,
+            "englishTitle": "Aguirre, Wrath of God",
+            "director": "Werner Herzog",
+            "year": "1972"
+        },
+        {
+            "rank": 59,
+            "englishTitle": "Gertrud",
+            "director": "Carl Theodor Dreyer",
+            "year": "1964"
+        },
+        {
+            "rank": 59,
+            "englishTitle": "Woman Under the Influence, A",
+            "director": "John Cassavetes",
+            "year": "1974"
+        },
+        {
+            "rank": 59,
+            "englishTitle": "Good, the Bad and the Ugly, The",
+            "director": "Sergio Leone",
+            "year": "1966"
+        },
+        {
+            "rank": 59,
+            "englishTitle": "Blue Velvet",
+            "director": "David Lynch",
+            "year": "1986"
+        },
+        {
+            "rank": 59,
+            "englishTitle": "grande illusion, La",
+            "director": "Jean Renoir",
+            "year": "1937"
+        },
+        {
+            "rank": 67,
+            "englishTitle": "Badlands",
+            "director": "Terrence Malick",
+            "year": "1973"
+        },
+        {
+            "rank": 67,
+            "englishTitle": "Blade Runner",
+            "director": "Ridley Scott",
+            "year": "1982"
+        },
+        {
+            "rank": 67,
+            "englishTitle": "Sunset Blvd.",
+            "director": "Billy Wilder",
+            "year": "1950"
+        },
+        {
+            "rank": 67,
+            "englishTitle": "Ugetsu Monogatari",
+            "director": "Mizoguchi Kenji",
+            "year": "1953"
+        },
+        {
+            "rank": 67,
+            "englishTitle": "Singin' in the Rain",
+            "director": "Stanley Donen, Gene Kelly",
+            "year": "1951"
+        },
+        {
+            "rank": 67,
+            "englishTitle": "In The Mood For Love",
+            "director": "Wong Kar Wai",
+            "year": "2000"
+        },
+        {
+            "rank": 67,
+            "englishTitle": "Journey to Italy",
+            "director": "Roberto Rossellini",
+            "year": "1954"
+        },
+        {
+            "rank": 67,
+            "englishTitle": "Vivre Sa Vie",
+            "director": "Jean-Luc Godard",
+            "year": "1962"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Seventh Seal, The",
+            "director": "Ingmar Bergman",
+            "year": "1957"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Hidden",
+            "director": "Michael Haneke",
+            "year": "2004"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Battleship Potemkin",
+            "director": "Sergei M Eisenstein",
+            "year": "1925"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "M",
+            "director": "Fritz Lang",
+            "year": "1931"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "There Will Be Blood",
+            "director": "Paul Thomas Anderson",
+            "year": "2007"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Shining, The",
+            "director": "Stanley Kubrick",
+            "year": "1980"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "General, The",
+            "director": "Buster Keaton",
+            "year": "1926"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Mulholland Dr",
+            "director": "David Lynch",
+            "year": "2003"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Clockwork Orange, A",
+            "director": "Stanley Kubrick",
+            "year": "1971"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Fear Eats the Soul",
+            "director": "Rainer Werner Fassbinder",
+            "year": "1974"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Kes",
+            "director": "Ken Loach",
+            "year": "1969"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Husbands",
+            "director": "John Cassavetes",
+            "year": "1970"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Wild Bunch, The",
+            "director": "Sam Peckinpah",
+            "year": "1969"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Salo, or The 120 Days of Sodom",
+            "director": "Pier Paolo Pasolini",
+            "year": "1975"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Jaws",
+            "director": "Steven Spielberg",
+            "year": "1975"
+        },
+        {
+            "rank": 75,
+            "englishTitle": "Los Olvidados",
+            "director": "Luis Buñuel",
+            "year": "1950"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "Pierrot le Fou",
+            "director": "Jean-Luc Godard",
+            "year": "1965"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "chien andalou, Un",
+            "director": "Luis Buñuel",
+            "year": "1928"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "Chinatown",
+            "director": "Roman Polanski",
+            "year": "1974"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "Maman et la putain, La",
+            "director": "Jean Eustache",
+            "year": "1973"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "Beau Travail",
+            "director": "Claire Denis",
+            "year": "1998"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "Opening Night",
+            "director": "John Cassavetes",
+            "year": "1977"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "Gold Rush, The",
+            "director": "Charles Chaplin",
+            "year": "1925"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "Zero de Conduite",
+            "director": "Jean Vigo",
+            "year": "1933"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "Deer Hunter, The",
+            "director": "Michael Cimino",
+            "year": "1977"
+        },
+        {
+            "rank": 91,
+            "englishTitle": "argent, L'",
+            "director": "Robert Bresson",
+            "year": "1983"
+        }
+    ]
+}
