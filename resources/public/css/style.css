@@ -7,11 +7,10 @@ h1 {
     font-size: 1.2em;
     display: inline-block;
     margin: 8px 0;
-    color: white;
 }
 
 .award-picker,
-.festival-picker {
+.event-picker {
     padding: 30px;
 }
 
@@ -27,6 +26,14 @@ nav {
     width: 100vw;
     left: calc(50vw - 50%);
     position: relative;
+}
+.side-nav {
+    width: 350px !important;
+    color: #333;
+    overflow: scroll;
+}
+@media only screen and (min-width: 992px) {
+    #main {margin-left: 350px;}
 }
 
 .movie-result-card {

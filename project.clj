@@ -13,21 +13,23 @@
                  [http-kit "2.1.19"]
                  [shodan "0.4.1"]
                  [org.clojure/data.json "0.2.5"]
+                 [clj-diff "1.0.0-20110104.084027-9"]
 
+                 ;; [org.clojure/clojurescript "0.0-3126" :scope "provided"]
                  [org.clojure/clojurescript "0.0-2843" :scope "provided"]
+                 ;; [org.omcljs/om "0.8.8"]
                  [om "0.7.3"]
                  [prismatic/om-tools "0.3.3" :exclusions [org.clojure/clojure]]
                  [domina "1.0.3"]
                  [cljs-ajax "0.3.10"]
-                 [form-juice "0.2.0"]
+                 [secretary "1.2.3"]
 
                  [figwheel "0.2.5"]
                  [environ "1.0.0"]
                  [com.cemerick/piggieback "0.1.5"]
                  [weasel "0.6.0"]
                  [leiningen "2.5.0"]
-                 [debugger "0.1.4"]
-                 ]
+                 [debugger "0.1.4"]]
 
   :plugins [[lein-cljsbuild "1.0.3"]
             [lein-environ "1.0.0"]
@@ -49,7 +51,7 @@
                                         :optimizations :none
                                         :pretty-print  true}}}}
 
-  :profiles {:dev {:repl-options {:init-ns filmster.server
+  :profiles {:dev {:repl-options {:init-ns          filmster.server
                                   :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
                    :plugins [[lein-figwheel "0.1.4-SNAPSHOT"]]

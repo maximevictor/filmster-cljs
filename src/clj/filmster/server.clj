@@ -1,17 +1,14 @@
 (ns filmster.server
-  (:require [clojure.java.io :as io]
-            [filmster.dev :refer [is-dev? inject-devmode-html browser-repl start-figwheel]]
+  (:require [filmster.dev :refer [is-dev? inject-devmode-html start-figwheel browser-repl]]
             [compojure.core :refer [GET defroutes]]
             [compojure.handler :refer [api]]
-            [cheshire.core :as json]
             [ring.middleware.reload :as reload]
             [environ.core :refer [env]]
             [org.httpkit.server :refer [run-server]]
-            [compojure.core :refer [GET defroutes]]
+            [clojure.java.io :as io]
             [compojure.route :refer [resources]]
             [net.cgrand.enlive-html :refer [deftemplate]]
-            [filmster.api :as api]
-            ))
+            [filmster.api :as api]))
 
 (deftemplate page
   (io/resource "index.html") [] [:body] (if is-dev? inject-devmode-html identity))
@@ -20,7 +17,8 @@
   (resources "/")
   (resources "/react" {:root "react"})
   (GET "/movies/" [& params] (api/movie-query params))
-  (GET "/festivals/" [] (api/festival-query))
+  (GET "/movie-details/" [& params] (api/detail-movie-query params))
+  (GET "/events/" [] (api/festival-query))
   (GET "/awards/" [] (api/award-query))
   (GET "/years/" [] (api/year-query))
   (GET "/movie/by-director/:term/" [term] (api/itunes-link term))

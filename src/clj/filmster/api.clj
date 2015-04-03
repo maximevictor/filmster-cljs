@@ -1,8 +1,7 @@
 (ns filmster.api
   (:require [cheshire.core :as json]
             [filmster.itunes :as itunes]
-            [filmster.films :as films]
-            ))
+            [filmster.query :as query]))
 
 (defn json-response [data & [status]]
   {:status  (or status 200)
@@ -10,16 +9,20 @@
    :body    (json/generate-string data)})
 
 (defn movie-query [params]
-  (json-response (films/get-data params)))
+  (json-response (query/query-films params)))
+
 
 (defn festival-query []
-  (json-response (films/get-festivals)))
+  (json-response (query/get-events)))
 
 (defn award-query []
-  (json-response (films/get-awards)))
+  (json-response (query/get-awards)))
 
 (defn year-query []
-  (json-response (films/get-years-bounds)))
+  (json-response (query/get-years-bounds)))
 
 (defn itunes-link [term]
   (json-response {:itunes-link (itunes/construct-itunes-search term "uk" nil)}))
+
+(defn detail-movie-query [{:keys [director movie-title] :as params}]
+  (json-response (itunes/get-closest-itunes-result director movie-title)))
