@@ -1,7 +1,14 @@
 (ns filmster.redis
-  (:require [taoensso.carmine :as carmine :refer (wcar)]))
+  (:require [filmster.dev :refer [is-dev?]]
+            [taoensso.carmine :as carmine :refer (wcar)]))
 
-(def server1-conn {:pool {} :spec {}})
+
+(if is-dev?
+  (def redis-port 6379)
+  (def redis-port 9553) ;; redis-to-go heroku
+  )
+
+(def server1-conn {:pool {} :spec {:port redis-port}})
 
 (defmacro wcar* [& body] `(carmine/wcar server1-conn ~@body))
 
