@@ -22,9 +22,8 @@
                    :keywords?       true}))
 
 (defn fetch-movie-details [movie app-state]
-  (let [{:keys [englishTitle originalTitle director]} movie
-        title (or englishTitle originalTitle)]
-    (GET "/movie-details/" {:params {:movie-title title
+  (let [{:keys [englishTitle originalTitle director]} movie]
+    (GET "/movie-details/" {:params {:movie-title originalTitle
                                      :director director}
                             :handler #(swap! app-state assoc-in [:featured :itunes-object] %)
                             :response-format :json

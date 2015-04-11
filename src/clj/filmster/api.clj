@@ -22,7 +22,7 @@
   (json-response (query/get-years-bounds)))
 
 (defn itunes-link [term]
-  (json-response {:itunes-link (itunes/construct-itunes-search term "uk" nil)}))
+  (json-response {:itunes-link (itunes/construct-itunes-search "uk" "directorTerm" term)}))
 
 (defn detail-movie-query [{:keys [director movie-title] :as params}]
-  (json-response (itunes/get-closest-itunes-result director movie-title)))
+  (json-response (itunes/get-cached-itunes-result director movie-title)))

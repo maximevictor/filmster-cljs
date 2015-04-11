@@ -129,5 +129,4 @@
   (om/root
    app
    app-state
-   {:target dom-entry-point})
-  )
+   {:target dom-entry-point}))

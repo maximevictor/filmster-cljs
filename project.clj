@@ -13,7 +13,9 @@
                  [http-kit "2.1.19"]
                  [shodan "0.4.1"]
                  [org.clojure/data.json "0.2.5"]
+                 [org.clojure/tools.logging "0.3.1"]
                  [clj-diff "1.0.0-20110104.084027-9"]
+                 [com.taoensso/carmine "2.9.2"]
 
                  ;; [org.clojure/clojurescript "0.0-3126" :scope "provided"]
                  [org.clojure/clojurescript "0.0-2843" :scope "provided"]
