@@ -20,20 +20,23 @@
 (def AFFILIATE-LINK "at=1l3vvZJ")
 
 (defonce app-state (atom {
-                          :events    []
-                          :awards    []
-                          :years     [1980 2015]
-                          :query     {:event     #{}
-                                      :award     #{}
-                                      :year-start 2000
-                                      :year-end   2015}
+                          :events           []
+                          :awards           []
+                          :years            [1980 2015]
+                          :query            {:event     #{}
+                                             :award     #{}
+                                             :year-start 2000
+                                             :year-end   2015}
 
-                          :results   []
-                          :featured  nil
-                          :fetching  false
-                          :submit-fn (fn [e]
-                                       (let [query-map (:query @app-state)]
-                                         (fetching/fetch-movies query-map app-state)))
+                          :results          []
+                          :featured         nil
+                          :fetching         false
+                          :available-filter true
+
+                          :submit-fn        (fn [e]
+                                              (swap! app-state assoc-in [results] {})
+                                              (let [query-map (:query @app-state)]
+                                                (fetching/fetch-movies query-map app-state)))
                           }))
 
 (def dom-entry-point (. js/document (getElementById "app")))
@@ -81,8 +84,7 @@
   (render [_]
           (let [image-url         (-> featured :itunes-object :artworkUrl100)
                 itunes-link       (-> featured :itunes-object :trackViewUrl)
-                no-protocol-image (second (.split image-url ":"))
-                affiliated-link   (str itunes-link "&" AFFILIATE-LINK)]
+                no-protocol-image (second (.split image-url ":"))]
             (dom/div {:id "movie-detail"
                       :class "modal"}
                      (dom/div {:class "modal-content"}
@@ -94,7 +96,7 @@
                      (dom/img {:src no-protocol-image})
                      (dom/div {:class "modal-footer"}
                               (if itunes-link
-                                (dom/a {:href    affiliated-link
+                                (dom/a {:href    itunes-link
                                         :target   "_"}
                                        "See in itunes"))
                               (dom/a {:class    "modal-action modal-close waves-effect waves-green btn-flat"

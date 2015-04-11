@@ -56,7 +56,7 @@
   :profiles {:dev {:repl-options {:init-ns          filmster.server
                                   :nrepl-middleware [cemerick.piggieback/wrap-cljs-repl]}
 
-                   :plugins [[lein-figwheel "0.1.4-SNAPSHOT"]]
+                   :plugins [[lein-figwheel "0.2.5"]]
 
                    :figwheel {:http-server-root "public"
                               :port 3449

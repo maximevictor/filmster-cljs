@@ -10,18 +10,28 @@
                              year
                              director
                              country
+                             itunes-url
+                             image
                              award]} owner]
   (render [_]
           (dom/div {:class "movie-result-card card"}
-                   (dom/div {:class "card-content"}
-                            (dom/div {:class "card-title"}
-                                     originalTitle)
-                            (if (utils/not-nil? englishTitle)
-                              (dom/span (str " (" englishTitle ") ")))
-                            (if (utils/not-nil? director)
-                              (dom/div  director))
-                            (dom/span year)
-                            (dom/div event)
-                            (dom/div award))
+                   (dom/div {:class "card-content row"}
+                            (dom/div {:class "col s8"}
+                                     (dom/div {:class "card-title"}
+                                              originalTitle)
+                                     (if (utils/not-nil? englishTitle)
+                                       (dom/span (str " (" englishTitle ") ")))
+                                     (if (utils/not-nil? director)
+                                       (dom/div  director))
+                                     (dom/span year)
+                                     (dom/div event)
+                                     (dom/div award)
+                                     (if (utils/not-nil? itunes-url)
+                                       (dom/a {:href itunes-url}
+                                              "view in itunes")))
+                            (dom/div {:class "col s4"}
+                                     (if (utils/not-nil? image)
+                                       (dom/div {:class "card-image"}
+                                                (dom/img {:src image})))))
                    )))
 

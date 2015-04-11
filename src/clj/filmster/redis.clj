@@ -5,6 +5,9 @@
 
 (defmacro wcar* [& body] `(carmine/wcar server1-conn ~@body))
 
+(defn flush-all []
+  (wcar* (carmine/flushall)))
+
 (defn set-key [key val]
   (wcar* (carmine/set key val)))
 

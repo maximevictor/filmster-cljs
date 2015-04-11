@@ -27,6 +27,21 @@
                                  (dom/span {:class "lever"}))
                       )))))
 
+(defcomponent switch-input [{:keys [value label]} owner]
+  (render [_]
+          (dom/div {:class "switch"}
+                   (dom/label
+                    (dom/span {:class "switch__label"} label)
+                    (dom/input {:value value
+                                :checked value
+                                :on-click (fn [el] (let [val (-> el .-target .-value)]
+                                                     (.log js/console (clj->js (:events owner)))
+                                                     (om/update! owner :available-filter val)
+                                                     ))
+                                :type "checkbox"}
+                               (dom/span {:class "lever"}))
+                    ))))
+
 (defcomponent event-picker [{:keys [events query] :as data} owner]
   (render [_]
           (dom/div {:class "event-picker"}
@@ -148,12 +163,14 @@
           (dom/div {:class "progress"}
                    (dom/div {:class "indeterminate"}))))
 
-(defcomponent movie-results [{:keys [results fetching]} owner]
+(defcomponent movie-results [{:keys [results fetching available-filter]} owner]
   (render-state [_ {:keys [feature]}]
           (dom/div {:class "col s6"}
                    (dom/h2
                     (dom/span "Results")
                     (dom/span (str " (" (count results) ")")))
+                   ;; (->switch-input {:value available-filter
+                   ;;                  :label "Show only available"})
                    (if fetching
                      (->fetching-indicator owner)
                      (for [movie results]

@@ -2,6 +2,7 @@
   (:require [clojure.data.json :as json]
             [clojure.string :as str]
             [filmster.utils :as utils]
+            [filmster.itunes :as itunes]
             [filmster.data :as data]))
 
 (defn build-filter-set [key params]
@@ -27,12 +28,13 @@
          set)))
 
 (defn query-film-data [params]
-  (let [year-set (build-year-set params)
-        predicates (every-pred (fn [film] (contains? year-set (:year film)))
-                               (build-query :event params)
-                               (build-query :award params))
-        results  (filter predicates data/film-data)]
-    (sort-by :year results)))
+  (let [year-set          (build-year-set params)
+        predicates        (every-pred (fn [film] (contains? year-set (:year film)))
+                                      (build-query :event params)
+                                      (build-query :award params))
+        results           (filter predicates data/film-data)
+        results-with-meta (map itunes/append-metadata-to-film results)]
+    (sort-by :year results-with-meta)))
 
 (defn query-films
   ([] (take 50 data/film-data))
