@@ -21,23 +21,19 @@
                       (dom/span {:class "switch__label"} value)
                       (dom/input {:value value
                                   :checked on
-                                  :on-click (fn [_] (om/transact! field-set (fn [s]
+                                 :on-click (fn [_] (om/transact! field-set (fn [s]
                                                                               (if on (disj s value) (conj s value)))))
                                   :type "checkbox"}
                                  (dom/span {:class "lever"}))
                       )))))
 
-(defcomponent switch-input [{:keys [value label]} owner]
+(defcomponent switch-input [{:keys [filters key label]}]
   (render [_]
           (dom/div {:class "switch"}
                    (dom/label
                     (dom/span {:class "switch__label"} label)
-                    (dom/input {:value value
-                                :checked value
-                                :on-click (fn [el] (let [val (-> el .-target .-value)]
-                                                     (.log js/console (clj->js (:events owner)))
-                                                     (om/update! owner :available-filter val)
-                                                     ))
+                    (dom/input {:checked (:available filters)
+                                :on-change (fn [_] (om/transact! filters key #(not %)))
                                 :type "checkbox"}
                                (dom/span {:class "lever"}))
                     ))))
@@ -158,21 +154,32 @@
                     (dom/i {:class "mdi-navigation-menu"})
                     )))))
 
-(defcomponent fetching-indicator [owner]
+(defcomponent fetching-indicator [_]
   (render [_]
           (dom/div {:class "progress"}
                    (dom/div {:class "indeterminate"}))))
 
-(defcomponent movie-results [{:keys [results fetching available-filter]} owner]
+(defn movie-is-available [movie]
+  (contains? movie :image))
+
+(defcomponent movie-results [{:keys [results fetching filters] :as owner}]
   (render-state [_ {:keys [feature]}]
-          (dom/div {:class "col s6"}
-                   (dom/h2
-                    (dom/span "Results")
-                    (dom/span (str " (" (count results) ")")))
-                   ;; (->switch-input {:value available-filter
-                   ;;                  :label "Show only available"})
-                   (if fetching
-                     (->fetching-indicator owner)
-                     (for [movie results]
-                       (dom/div {:on-click #(put! feature @movie)}
-                                (movies/->movie movie)))))))
+                (let [only-show-available (:available filters)
+                      has-results         (< 0 (count results))
+                      filtered-results    (filter movie-is-available results)
+                      results-to-show     (if only-show-available filtered-results results)]
+                  (dom/div {:class "col s6"}
+                           (dom/h2
+                            (dom/span "Results")
+                            (if only-show-available
+                              (dom/span (str " (" (count filtered-results) "/" (count results) ")"))
+                              (dom/span (str " (" (count results) ")"))))
+                           (if has-results
+                             (->switch-input {:filters filters
+                                              :key     :available
+                                              :label   "Show only available"}))
+                           (if fetching
+                             (->fetching-indicator owner)
+                             (for [movie results-to-show]
+                               (dom/div ;; {:on-click #(put! feature @movie)}
+                                        (movies/->movie movie))))))))

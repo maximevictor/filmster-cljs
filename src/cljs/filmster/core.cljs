@@ -17,26 +17,24 @@
 
 (def jquery (js* "jQuery"))
 
-(def AFFILIATE-LINK "at=1l3vvZJ")
-
 (defonce app-state (atom {
-                          :events           []
-                          :awards           []
-                          :years            [1980 2015]
-                          :query            {:event     #{}
-                                             :award     #{}
-                                             :year-start 2000
-                                             :year-end   2015}
+                          :events    []
+                          :awards    []
+                          :years     [1980 2015]
+                          :query     {:event     #{}
+                                      :award     #{}
+                                      :year-start 2000
+                                      :year-end   2015}
 
-                          :results          []
-                          :featured         nil
-                          :fetching         false
-                          :available-filter true
+                          :results   []
+                          :featured  nil
+                          :fetching  false
+                          :filters   {:available true}
 
-                          :submit-fn        (fn [e]
-                                              (swap! app-state assoc-in [results] {})
-                                              (let [query-map (:query @app-state)]
-                                                (fetching/fetch-movies query-map app-state)))
+                          :submit-fn (fn [e]
+                                       (swap! app-state assoc-in [results] {})
+                                       (let [query-map (:query @app-state)]
+                                         (fetching/fetch-movies query-map app-state)))
                           }))
 
 (def dom-entry-point (. js/document (getElementById "app")))

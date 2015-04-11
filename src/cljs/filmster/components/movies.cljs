@@ -27,7 +27,7 @@
                                      (dom/div event)
                                      (dom/div award)
                                      (if (utils/not-nil? itunes-url)
-                                       (dom/a {:href itunes-url}
+                                       (dom/a {:href itunes-url :target "_"}
                                               "view in itunes")))
                             (dom/div {:class "col s4"}
                                      (if (utils/not-nil? image)
