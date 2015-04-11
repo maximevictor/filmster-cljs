@@ -170,10 +170,12 @@
                       results-to-show     (if only-show-available filtered-results results)]
                   (dom/div {:class "col s6"}
                            (dom/h2
-                            (dom/span "Results")
-                            (if only-show-available
-                              (dom/span (str " (" (count filtered-results) "/" (count results) ")"))
-                              (dom/span (str " (" (count results) ")"))))
+                            (if has-results
+                              (do 
+                                (dom/span "Results")
+                                (if only-show-available
+                                  (dom/span (str " (" (count filtered-results) "/" (count results) ")"))
+                                  (dom/span (str " (" (count results) ")"))))))
                            (if has-results
                              (->switch-input {:filters filters
                                               :key     :available
