@@ -101,8 +101,7 @@
             #(movie-title-contains-word % english-title)
             #(movie-title-contains-word % original-title)
             #(movie-title-contains-word % (utils/get-longest-word english-title))
-            #(movie-title-contains-word % (utils/get-longest-word original-title))
-            )
+            #(movie-title-contains-word % (utils/get-longest-word original-title)))
    candidate))
 
 (defn match-movie-with-itunes [{:keys [director original-title english-title country]}]

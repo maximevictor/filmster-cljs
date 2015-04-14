@@ -3,9 +3,13 @@
             [filmster.itunes :as itunes]
             [filmster.data :as data]))
 
-(deftest query-itunes-test
-  (let [q (itunes/query-itunes! "almodovar" "US")]
-    (is (= 9 (count q)))))
+(def OFFLINE false)
+
+(if (not OFFLINE)
+
+  (deftest query-itunes-test
+    (let [q (itunes/query-itunes! "almodovar" "US")]
+      (is (= 9 (count q))))))
 
 (deftest movie-title-equals-test
   (let [m {:trackName "The White Ribbon"
@@ -38,13 +42,15 @@
                                candidates)]
     (is (= "The White Ribbon" (-> matches first :trackName)))))
 
-(deftest get-best-match-from-itunes-test
-  (let [query {:director "haneke"
-               :original-title "das weisse band"
-               :english-title "the white ribbon"
-               :country "US"}
-        match (itunes/match-movie-with-itunes query)]
-    (is (= "The White Ribbon" (-> match :trackName)))))
+(if (not OFFLINE)
+
+  (deftest get-best-match-from-itunes-test
+    (let [query {:director "haneke"
+                 :original-title "das weisse band"
+                 :english-title "the white ribbon"
+                 :country "US"}
+          match (itunes/match-movie-with-itunes query)]
+      (is (= "The White Ribbon" (-> match :trackName))))))
 
 (deftest get-best-match-from-cache-test
   (let [query {:director "haneke"
