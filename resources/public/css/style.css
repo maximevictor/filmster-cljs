@@ -43,6 +43,7 @@ body, nav {
 }
 .card-title {
     color: white;
+    line-height: 28px !important;
 }
 
 .itunes-link {

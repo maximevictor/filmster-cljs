@@ -12,6 +12,8 @@
             [filmster.utils :as utils])
   (:require-macros [cljs.core.async.macros :refer [go]]))
 
+(def HOLDING-TEXT "Filmster is a smart way to discover the best movies on iTunes, in competition at top international Film Festivals and Award Ceremonies. It also includes annual top 10 lists from the celebrated French magazine 'Cahiers du Cinéma.' Never waste your time looking for a good film again!")
+
 (defn jlog [v]
   (.log js/console (clj->js v)))
 
@@ -202,6 +204,11 @@
            (str " (" (count results) ")"))]])
 
 
+(defn holding-screen []
+  [:div [:h2 [:img {:src "/img/favicon.png"} "Filmster"]]
+   [:p HOLDING-TEXT]]
+  )
+
 (defn results []
   (let [only-show-available (-> @app-state :filters :available)
         results             (-> @app-state :results)
@@ -209,16 +216,20 @@
         filtered-results    (filter movie-is-available results)
         results-to-show     (if only-show-available filtered-results results)]
     [:div.col.s6
-     [results-header {:only-show-available only-show-available
-                      :results             results
-                      :filtered-results    filtered-results}]
-  (if has-results
-    (switch-input :available "Show only available"))
+
+     (if has-results
+       [:div [results-header {:only-show-available only-show-available
+                              :results             results
+                              :filtered-results    filtered-results}]
+        (switch-input :available "Show only available")
+        (for [movie results-to-show]
+          [movie/movie-card movie])
+        ]
+       [holding-screen])
      (if (:fetching @app-state)
        [fetching-indicator])
 
-     (for [movie results-to-show]
-       [movie/movie-card movie])
+
      ]
     ))
 
@@ -231,13 +242,7 @@
      [:div.row
       [results]]]]])
 
-(defn doc-ready-handler []
-  (let[ ready-state (. js/document -readyState)]
-    (if (= "complete" ready-state)
-      (init)
-      (reagent/render [app]
-                      (js/document.getElementById "app"))
-      )))
-
-
-(defn main [] (aset js/document "onreadystatechange" doc-ready-handler))
+(defn main []
+  (init)
+  (reagent/render [app]
+                  (js/document.getElementById "app")))
