@@ -128,9 +128,18 @@
                                (search/->movie-results data {:init-state {:feature feature}})
                                ))))))
 
-(defn main []
-  (init)
+(defn main-app []
   (om/root
    app
    app-state
    {:target dom-entry-point}))
+
+(defn doc-ready-handler []
+  (let[ ready-state (. js/document -readyState)]
+    (if (= "complete" ready-state)
+      (do
+        (init)
+        (main-app)))))
+
+(defn main []
+  (aset js/document "onreadystatechange" doc-ready-handler ))
