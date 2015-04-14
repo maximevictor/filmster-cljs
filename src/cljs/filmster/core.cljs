@@ -215,7 +215,7 @@
         has-results         (< 0 (count results))
         filtered-results    (filter movie-is-available results)
         results-to-show     (if only-show-available filtered-results results)]
-    [:div.col.s6
+    [:div.col.m6.s12
 
      (if has-results
        [:div [results-header {:only-show-available only-show-available

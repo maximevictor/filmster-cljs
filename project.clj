@@ -20,8 +20,8 @@
                  ;; [org.clojure/clojurescript "0.0-3126" :scope "provided"]
                  [org.clojure/clojurescript "0.0-2843" :scope "provided"]
                  ;; [org.omcljs/om "0.8.8"]
-                 [om "0.7.3"]
-                 [prismatic/om-tools "0.3.3" :exclusions [org.clojure/clojure]]
+                 ;; [om "0.7.3"]
+                 ;; [prismatic/om-tools "0.3.3" :exclusions [org.clojure/clojure]]
                  [reagent "0.5.0"]
                  [domina "1.0.3"]
                  [cljs-ajax "0.3.10"]
@@ -69,7 +69,7 @@
 
              :uberjar {:hooks [leiningen.cljsbuild]
                        :env {:production true}
-                       :omit-source true
+                       ;; :omit-source true
                        :aot :all
                        :cljsbuild {:builds {:app
                                             {:source-paths ["env/prod/cljs"]
