@@ -4,7 +4,3 @@
 (def countries (json/read-str (slurp "resources/CountryCodes.json")
                             :key-fn keyword))
 
-(keys (first countries))
-;; (:name :countryCode)
-
-(map :name countries)

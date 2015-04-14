@@ -8,6 +8,7 @@
             [clojure.java.io :as io]
             [compojure.route :refer [resources]]
             [net.cgrand.enlive-html :refer [deftemplate]]
+            [filmster.cache :as cache]
             [filmster.api :as api]))
 
 (deftemplate page
@@ -21,6 +22,7 @@
   (GET "/events/" [] (api/festival-query))
   (GET "/awards/" [] (api/award-query))
   (GET "/years/" [] (api/year-query))
+  (GET "/countries/" [] (api/countries-query))
   (GET "/movie/by-director/:term/" [term] (api/itunes-link term))
   (GET "/" req (page)))
 
@@ -32,7 +34,9 @@
 (defn run [& [port]]
   (defonce ^:private server
     (do
-      (if is-dev? (start-figwheel))
+      (if is-dev? (start-figwheel)
+          (cache/flush-all) ;; clear cache at redeploys
+          )
       (let [port (Integer. (or port (env :port) 10555))]
         (print "Starting web server on port" port ".\n")
         (run-server http-handler {:port port

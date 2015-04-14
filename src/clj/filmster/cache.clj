@@ -1,4 +1,4 @@
-(ns filmster.redis
+(ns filmster.cache
   (:require [filmster.dev :refer [is-dev?]]
             [taoensso.carmine :as carmine :refer (wcar)]))
 
@@ -23,3 +23,13 @@
 (defn get-key [key]
   (let [result (wcar* (carmine/get key))]
     result))
+
+(defn cache-wrapper [fn args key]
+  "returns value at key, or computes fn and stores result at key
+   NOTE: stores empty results as empty map instead of nil, in order to cache them too"
+  (let [cache-value (get-key key)]
+    (if cache-value
+      cache-value
+      (let [result (fn args)]
+        (set-key key (or result {}))
+        result))))

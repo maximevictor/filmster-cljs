@@ -33,7 +33,7 @@
                                       (build-query :event params)
                                       (build-query :award params))
         results           (filter predicates data/film-data)
-        results-with-meta (map itunes/append-metadata-to-film results)]
+        results-with-meta (map #(itunes/append-metadata-to-film % "US") results)]
     (sort-by :year results-with-meta)))
 
 (defn query-films

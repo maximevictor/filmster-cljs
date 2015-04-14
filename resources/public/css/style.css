@@ -19,19 +19,21 @@ body, nav {
     color: white;
 }
 
-nav {
-    background: #333;
-    box-shadow: none;
-    border-bottom: 1px solid white;
-    width: 100vw;
-    left: calc(50vw - 50%);
-    position: relative;
-}
+/* nav { */
+/*     background: #333; */
+/*     box-shadow: none; */
+/*     border-bottom: 1px solid white; */
+/*     width: 100vw; */
+/*     left: calc(50vw - 50%); */
+/*     position: relative; */
+/* } */
+
 .side-nav {
-    width: 350px !important;
+    /* width: 350px !important; */
     color: #333;
-    overflow: scroll;
+    overflow-y: scroll;
 }
+
 @media only screen and (min-width: 992px) {
     #main {margin-left: 350px;}
 }

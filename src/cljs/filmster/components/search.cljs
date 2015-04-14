@@ -116,18 +116,16 @@
 
 (defcomponent movie-form [owner]
   (did-mount [_]
-             (-> (jquery ".button-collapse") (.sideNav))
+             (-> (jquery ".button-collapse") (.sideNav #js {:menuWidth 320}))
              (-> (jquery ".collapsible") (.collapsible)))
 
   (render [_]
-          (let [query     (:query owner)
-                selected (:event query)
-                total     (:events owner)]
+          (let [query    (:query owner)]
             (dom/nav
              (dom/ul {:id "slide-out"
                       :class "side-nav fixed"}
+                     (dom/h3 "Filmster")
                      (dom/form {:id "query-form"}
-                               (->search-btn owner)
                                (dom/ul {:class "collapsible" :data-collapsible "accordion"}
                                        (collapsible-entry "Events" "mdi-av-movie"
                                                           (->set-count-display {:selected (:event query)
@@ -146,7 +144,11 @@
                                                                     (->slider-input {:label      "End year"
                                                                                      :field-name "year-end"
                                                                                      :owner      query
-                                                                                     :interval   (:years owner)}))))
+                                                                                     :interval   (:years owner)})))
+                                       (dom/li (dom/div {:class "collapsible-header"}
+                                                        (dom/i {:class "mdi-content-flag"})
+                                                        "App store: " (:name (:country query)))))
+                               (->search-btn owner)
                                ))
              (dom/a {:href "#"
                      :data-activates "slide-out"
@@ -162,6 +164,14 @@
 (defn movie-is-available [movie]
   (contains? movie :image))
 
+(defcomponent results-header [{:keys [only-show-available results filtered-results] :as data}]
+  (render [_]
+          (dom/div
+           (dom/h2 "Results")
+           (dom/h4 (if only-show-available
+              (dom/span (str " (" (count filtered-results) "/" (count results) ")"))
+              (dom/span (str " (" (count results) ")")))))))
+
 (defcomponent movie-results [{:keys [results fetching filters] :as owner}]
   (render-state [_ {:keys [feature]}]
                 (let [only-show-available (:available filters)
@@ -169,13 +179,10 @@
                       filtered-results    (filter movie-is-available results)
                       results-to-show     (if only-show-available filtered-results results)]
                   (dom/div {:class "col s6"}
-                           (dom/h2
-                            (if has-results
-                              (do 
-                                (dom/span "Results")
-                                (if only-show-available
-                                  (dom/span (str " (" (count filtered-results) "/" (count results) ")"))
-                                  (dom/span (str " (" (count results) ")"))))))
+
+                           (->results-header {:only-show-available only-show-available
+                                              :results             results
+                                              :filtered-results    filtered-results})
                            (if has-results
                              (->switch-input {:filters filters
                                               :key     :available
@@ -183,5 +190,5 @@
                            (if fetching
                              (->fetching-indicator owner)
                              (for [movie results-to-show]
-                               (dom/div ;; {:on-click #(put! feature @movie)}
-                                        (movies/->movie movie))))))))
+                               (dom/div
+                                (movies/->movie movie))))))))

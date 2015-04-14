@@ -20,19 +20,20 @@
 (defonce app-state (atom {
                           :events    []
                           :awards    []
+                          :countries []
                           :years     [1980 2015]
-                          :query     {:event     #{}
-                                      :award     #{}
+                          :query     {:event      #{}
+                                      :award      #{}
                                       :year-start 2000
-                                      :year-end   2015}
-
+                                      :year-end   2015
+                                      :country    {:name "USA" :countryCode "US"}}
                           :results   []
                           :featured  nil
                           :fetching  false
                           :filters   {:available true}
 
                           :submit-fn (fn [e]
-                                       (swap! app-state assoc-in [results] {})
+                                       (swap! app-state assoc-in [:results] {})
                                        (let [query-map (:query @app-state)]
                                          (fetching/fetch-movies query-map app-state)))
                           }))
@@ -48,6 +49,9 @@
   (fetching/fetch-resource "awards"
                            (fn [r]
                              (swap! app-state assoc-in [:awards] r)))
+  (fetching/fetch-resource "countries"
+                           (fn [r]
+                             (swap! app-state assoc-in [:countries] r)))
   (add-watch app-state :query-year-start-watch
              (fn [_ atom _ new-state]
                (let [{:keys [year-start year-end]} (:query new-state)]
@@ -116,7 +120,7 @@
   (render-state [_ {:keys [feature]}]
    (dom/div (search/->movie-form data)
             (dom/div {:id "main"}
-             (->header data)
+             ;; (->header data)
              (dom/div {:class "container"}
                       (dom/div {:class "row"}
                                (if (utils/not-nil? (:featured data))
