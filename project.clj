@@ -22,6 +22,7 @@
                  ;; [org.omcljs/om "0.8.8"]
                  [om "0.7.3"]
                  [prismatic/om-tools "0.3.3" :exclusions [org.clojure/clojure]]
+                 [reagent "0.5.0"]
                  [domina "1.0.3"]
                  [cljs-ajax "0.3.10"]
                  [secretary "1.2.3"]
@@ -47,7 +48,7 @@
   :cljsbuild {:builds {:app {:source-paths ["src/cljs"]
                              :compiler {:output-to     "resources/public/js/app.js"
                                         :output-dir    "resources/public/js/out"
-                                        :source-map    "resources/public/js/out.js.map"
+                      ;;                  :source-map    "resources/public/js/out.js.map"
                                         :preamble      ["react/react.min.js"]
                                         :externs       ["react/externs/react.js"]
                                         :optimizations :none

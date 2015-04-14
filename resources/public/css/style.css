@@ -44,3 +44,8 @@ body, nav {
 .card-title {
     color: white;
 }
+
+.itunes-link {
+    margin-top: 1em;
+    width: 80px;
+}

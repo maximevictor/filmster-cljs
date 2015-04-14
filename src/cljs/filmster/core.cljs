@@ -2,20 +2,20 @@
   (:require [om.core :as om :include-macros true]
             [om-tools.dom :as dom :include-macros true]
             [om-tools.core :refer-macros [defcomponent]]
-            ;; [secretary.core :as secretary :refer-macros [defroute]]
+            [reagent.core :as reagent :refer [atom]]
             [cljs.core.async :as async :refer [put! chan alts! >!]]
             [shodan.console :as console :include-macros true]
             [clojure.string :as string]
 
             [filmster.fetching :as fetching]
-            [filmster.utils :as utils]
-            [filmster.components.search :as search]
-            [filmster.components.movies :as movies])
+            [filmster.components.movie :as movie]
+            [filmster.utils :as utils])
   (:require-macros [cljs.core.async.macros :refer [go]]))
 
-(enable-console-print!)
+(defn jlog [v]
+  (.log js/console (clj->js v)))
 
-(def jquery (js* "jQuery"))
+(enable-console-print!)
 
 (defonce app-state (atom {
                           :events    []
@@ -31,11 +31,6 @@
                           :featured  nil
                           :fetching  false
                           :filters   {:available true}
-
-                          :submit-fn (fn [e]
-                                       (swap! app-state assoc-in [:results] {})
-                                       (let [query-map (:query @app-state)]
-                                         (fetching/fetch-movies query-map app-state)))
                           }))
 
 (def dom-entry-point (. js/document (getElementById "app")))
@@ -52,94 +47,197 @@
   (fetching/fetch-resource "countries"
                            (fn [r]
                              (swap! app-state assoc-in [:countries] r)))
-  (add-watch app-state :query-year-start-watch
-             (fn [_ atom _ new-state]
-               (let [{:keys [year-start year-end]} (:query new-state)]
-                 (if (<= year-end year-start)
-                   (swap! atom assoc-in [:query :year-end] year-start)))) ))
+  ;; (add-watch app-state :query-year-start-watch
+  ;;            (fn [_ atom _ new-state]
+  ;;              (let [{:keys [year-start year-end]} (:query new-state)]
+  ;;                (if (<= year-end year-start)
+  ;;                  (swap! atom assoc-in [:query :year-end] year-start)))) )
+  )
 
-(defcomponent header []
-  (render [_]
-          (dom/nav
-           (dom/div {:class "nav-wrapper"}
-                    (dom/a {:class "brand-logo"} "Filmster")
-                    (dom/ul {:id "nav-mobile"
-                             :class "right hide-on-med-and-down"}
-                            (dom/li (dom/a {:href "#"} "About")))))))
+(defn proportion-selected [{:keys [selected total]}]
+  (let [sel-count   (count selected)
+        total-count (count total)]
+    [:span (if (= sel-count total-count)
+             [:span " (All)"]
+             [:span (str " (" sel-count "/" total-count ")")])]
+    ))
 
 
-(defcomponent nav []
-  (render [_]
-          (dom/nav
-           (dom/ul {:id "slide-out"
-                    :class "side-nav fixed"}
-                    (dom/li (dom/a {:href "#"} "First"))
-                    (dom/li (dom/a {:href "#"} "First")))
-           (dom/a {:data-activates "slide-out"
-                   :class "button-collapse"}
-                  (dom/i {:class "mdi-navigation-menu"})))))
+(defn collapsible-entry [title icon-class badge component]
+  [:li [:div.collapsible-header
+        [:div [:i {:class icon-class}]
+         [:span title badge]
+         [:span.badge [:i {:class "mdi-navigation-arrow-drop-down"}]]]
+        ]
+   [:div.collapsible-body component]
+   ])
 
-(defcomponent featured-result [{:keys [featured] :as data} owner]
-  (did-mount [_]
-            (-> (jquery "#movie-detail") (.openModal)))
+(defn switch-for-set-entry [{:keys [value field-set key]}]
+  ;; value = single, e.g. "Berlin"
+  ;; field-set = #{set} in which to place value if toggled
+  (let [on (contains? field-set value)]
+    [:div.switch
+     [:label
+      [:span.switch__label value]
+      [:input {:value value
+               :checked on
+               :onChange #(swap! app-state assoc-in [:query key]
+                                 (if on
+                                   (disj field-set value)
+                                   (conj field-set value)))
+               :type "checkbox"}
+       [:span.lever]]
+      ]]))
 
-  (render [_]
-          (let [image-url         (-> featured :itunes-object :artworkUrl100)
-                itunes-link       (-> featured :itunes-object :trackViewUrl)
-                no-protocol-image (second (.split image-url ":"))]
-            (dom/div {:id "movie-detail"
-                      :class "modal"}
-                     (dom/div {:class "modal-content"}
-                              (dom/h4 {:style {:color "black"}}
-                                      (str (:englishTitle featured)
-                                           " - "
-                                           (:originalTitle featured)))
-                              (dom/p (:description featured)))
-                     (dom/img {:src no-protocol-image})
-                     (dom/div {:class "modal-footer"}
-                              (if itunes-link
-                                (dom/a {:href    itunes-link
-                                        :target   "_"}
-                                       "See in itunes"))
-                              (dom/a {:class    "modal-action modal-close waves-effect waves-green btn-flat"
-                                      :on-click #(swap! app-state assoc :featured nil)}
-                                     "X"))))))
+(defn switch-input [key label]
+  (let [value (-> @app-state :filters key)]
+        [:div.switch
+         [:label
+          [:span.switch__label label]
+          [:input {:value value
+                   :checked value
+                   :onChange #(swap! app-state assoc-in [:filters key] (not value))
+                   :type "checkbox"}
+           [:span.lever]]
+          ]]))
 
-(defcomponent app [data owner]
-  (init-state [_]
-              {:feature (chan)})
+(defn slider [{:keys [label field-name owner interval]}]
+  (let [[min max] interval
+        key       (-> field-name name keyword)
+        value     (-> @app-state :query key)]
+    [:div.row
+     [:div.col.s9
+      ;; [:label label]
+      [:input {:type "range" :value value
+               :name field-name :min min :max max
+               :onChange (fn [el] (let [val (-> el .-target .-value)]
+                                    (swap! app-state assoc-in [:query key] val)))}]]
+     [:div.col.s3 value]]))
 
-  (will-mount [_]
-              (let [movie-clicked (om/get-state owner :feature)]
-                (go (loop []
-                      (let [featured-movie (<! movie-clicked)]
-                        (fetching/fetch-movie-details featured-movie app-state)
-                        (om/transact! data :featured (fn [e] featured-movie))
-                      (recur))))))
+(defn interval-selected []
+  (let [start (-> @app-state :query :year-start)
+        end   (-> @app-state :query :year-end)]
+    [:span (str " (" start " - " end ")")])
+  )
 
-  (render-state [_ {:keys [feature]}]
-   (dom/div (search/->movie-form data)
-            (dom/div {:id "main"}
-             ;; (->header data)
-             (dom/div {:class "container"}
-                      (dom/div {:class "row"}
-                               (if (utils/not-nil? (:featured data))
-                                 (->featured-result data))
-                               (search/->movie-results data {:init-state {:feature feature}})
-                               ))))))
+(defn submit-fn [e]
+  (swap! app-state assoc-in [:results] {})
+  (let [query-map (:query @app-state)]
+    (fetching/fetch-movies query-map app-state))
+  (.preventDefault e))
 
-(defn main-app []
-  (om/root
-   app
-   app-state
-   {:target dom-entry-point}))
+(defn search-form []
+  [:ul.collapsible {:data-collapsible "accordion"}
+
+   [collapsible-entry "Events" "mdi-av-movie"
+    [proportion-selected {:selected (-> @app-state :query :event)
+                          :total    (-> @app-state :events)}]
+    (for [event (-> @app-state :events)]
+      (switch-for-set-entry {:value     event
+                             :field-set (-> @app-state :query :event)
+                             :key       :event}))
+    ]
+
+   [collapsible-entry "Awards" "mdi-action-grade"
+    [proportion-selected {:selected (-> @app-state :query :award)
+                          :total (-> @app-state :awards)}]
+    (for [award (-> @app-state :awards)]
+      (switch-for-set-entry {:value     award
+                             :field-set (-> @app-state :query :award)
+                             :key       :award}))
+    ]
+
+   [collapsible-entry "Years" "mdi-action-event"
+    [interval-selected]
+    [:div
+     [slider {:label      "Start year"
+              :field-name "year-start"
+              :owner      (-> @app-state :query)
+              :interval   (-> @app-state :years)}]
+     [slider {:label      "End year"
+              :field-name "end-start"
+              :owner      (-> @app-state :query)
+              :interval   (-> @app-state :years)}]]]
+
+   [:li [:div.collapsible-header [:i.mdi-content-flag]
+         "App store: " (-> @app-state :query :country :name)]]
+   [:li [:div.collapsible-header [:button
+                                  {:onClick submit-fn
+                                   :class "btn waves-effect"}
+                                  "Search"]]]
+   ])
+
+(defn side-panel []
+  [:div
+   [:nav [:ul#slide-out.side-nav.fixed
+          [:h3 "Filmster"]
+          [search-form]]
+    [:a.button-collapse {:href "#"
+                         :data-activates "slide-out"}
+     [:i.mdi-navigation-menu]]]])
+
+(defn side-panel-did-mount []
+  (js/$ (fn []
+          (let [opts {:menuWidth 320}]
+            (.sideNav (js/$ ".button-collapse")
+                      (clj->js opts))
+            (.collapsible (js/$ ".collapsible"))))))
+
+(defn side-panel-component []
+  (reagent/create-class {:reagent-render      side-panel
+                         :component-did-mount side-panel-did-mount}))
+
+(defn movie-is-available [movie]
+  (contains? movie :image))
+
+(defn fetching-indicator [_]
+  [:div.progress
+   [:div.indeterminate]])
+
+(defn results-header [{:keys [only-show-available results filtered-results]}]
+  [:div
+   [:h2 "Results"]
+   [:h4 (if only-show-available
+           (str " (" (count filtered-results) "/" (count results) ")")
+           (str " (" (count results) ")"))]])
+
+
+(defn results []
+  (let [only-show-available (-> @app-state :filters :available)
+        results             (-> @app-state :results)
+        has-results         (< 0 (count results))
+        filtered-results    (filter movie-is-available results)
+        results-to-show     (if only-show-available filtered-results results)]
+    [:div.col.s6
+     [results-header {:only-show-available only-show-available
+                      :results             results
+                      :filtered-results    filtered-results}]
+  (if has-results
+    (switch-input :available "Show only available"))
+     (if (:fetching @app-state)
+       [fetching-indicator])
+
+     (for [movie results-to-show]
+       [movie/movie-card movie])
+     ]
+    ))
+
+(defn app []
+  [:div
+   [:div
+    [side-panel-component]]
+   [:div#main
+    [:div.container
+     [:div.row
+      [results]]]]])
 
 (defn doc-ready-handler []
   (let[ ready-state (. js/document -readyState)]
     (if (= "complete" ready-state)
-      (do
-        (init)
-        (main-app)))))
+      (init)
+      (reagent/render [app]
+                      (js/document.getElementById "app"))
+      )))
 
-(defn main []
-  (aset js/document "onreadystatechange" doc-ready-handler ))
+
+(defn main [] (aset js/document "onreadystatechange" doc-ready-handler))
