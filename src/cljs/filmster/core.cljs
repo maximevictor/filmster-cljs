@@ -1,8 +1,5 @@
 (ns filmster.core
-  (:require [om.core :as om :include-macros true]
-            [om-tools.dom :as dom :include-macros true]
-            [om-tools.core :refer-macros [defcomponent]]
-            [reagent.core :as reagent :refer [atom]]
+  (:require [reagent.core :as reagent :refer [atom]]
             [cljs.core.async :as async :refer [put! chan alts! >!]]
             [shodan.console :as console :include-macros true]
             [clojure.string :as string]
@@ -181,9 +178,9 @@
 (defn side-panel-did-mount []
   (js/$ (fn []
           (let [opts {:menuWidth 320}]
-            (.sideNav (js/$ ".button-collapse")
-                      (clj->js opts))
-            (.collapsible (js/$ ".collapsible"))))))
+            (.sideNav (js/$ ".button-collapse") #js {:menuWidth 320})
+            (.collapsible (js/$ ".collapsible"))
+                          ))))
 
 (defn side-panel-component []
   (reagent/create-class {:reagent-render      side-panel

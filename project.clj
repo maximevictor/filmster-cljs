@@ -6,6 +6,7 @@
                  [org.clojure/core.async "0.1.346.0-17112a-alpha"]
 
                  [ring "1.3.2"]
+                 [ring/ring-codec "1.0.0"]
                  [compojure "1.2.0"]
                  [enlive "1.1.5"]
                  [cheshire "5.4.0"]
@@ -16,6 +17,7 @@
                  [org.clojure/tools.logging "0.3.1"]
                  [clj-diff "1.0.0-20110104.084027-9"]
                  [com.taoensso/carmine "2.9.2"]
+                 [commons-codec "1.10"]
 
                  ;; [org.clojure/clojurescript "0.0-3126" :scope "provided"]
                  [org.clojure/clojurescript "0.0-2843" :scope "provided"]

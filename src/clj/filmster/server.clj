@@ -35,7 +35,7 @@
   (defonce ^:private server
     (do
       (if is-dev? (start-figwheel)
-          (cache/flush-all) ;; clear cache at redeploys
+          ;; (cache/flush-all) ;; clear cache at redeploys
           )
       (let [port (Integer. (or port (env :port) 10555))]
         (print "Starting web server on port" port ".\n")

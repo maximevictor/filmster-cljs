@@ -16,3 +16,4 @@ pom.xml.asc
 /resources/public/js/out/
 /resources/public/js/app.js
 /.env
+/resources/public/js/out.js.map

@@ -5,6 +5,7 @@
             [clojure.tools.logging :as log]
             [clojure.string :as string]
             [filmster.cache :as cache]
+            [ring.util.codec :as codec]
             [filmster.utils :as utils]))
 
 (def AFFILIATE-LINK "at=1l3vvZJ")
@@ -22,7 +23,7 @@
                      :country   (or country "US")
                      :attribute attribute
                      :term      term}
-        form-query  (ring.util.codec/form-encode query)]
+        form-query  (codec/form-encode query)]
     (str itunes-root "?" form-query)))
 
 (defn query-itunes! [director country]

@@ -3,12 +3,7 @@
             [taoensso.carmine :as carmine :refer (wcar)]))
 
 
-(if is-dev?
-  (def redis-spec nil)
-  (def redis-spec {:host "gar.redistogo.com"
-                   :port 9553
-                   :user "redistogo"
-                   :password "270223350046ca0978ecfe713525894e"}))
+(def redis-spec nil)
 
 (def server1-conn {:pool {} :spec redis-spec})
 
