@@ -11,6 +11,8 @@
 
 (def HOLDING-TEXT "Filmster is a smart way to discover the best movies on iTunes, in competition at top international Film Festivals and Award Ceremonies. It also includes annual top 10 lists from the celebrated French magazine 'Cahiers du Cinéma.' Never waste your time looking for a good film again!")
 
+;comment by maxime!!
+
 (defn jlog [v]
   (.log js/console (clj->js v)))
 
